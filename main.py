@@ -52,9 +52,9 @@ model = make_pipeline(
 
 model.fit(xtrain, ytrain)
 
-y_pred = model.predict(x_test)
-model.predict([[0.749,8.242,-3.206]])
+y_pred = model.predict(x_test
 
+#creating pickle file
 pickle_out = open("classifier.pkl","rb")
 pickle.dump(model, pickle_out)
 pickle_out.close()
