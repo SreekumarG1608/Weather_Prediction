@@ -1,22 +1,14 @@
 import numpy as np
 import pickle
 import pandas as pd
-#from flasgger import Swagger
 import streamlit as st 
-
-from PIL import Image
-
-#app=Flask(__name__)
-#Swagger(app)
 
 pickle_in = open("classifier.pkl","rb")
 regressor=pickle.load(pickle_in)
 
-#@app.route('/')
 def welcome():
     return "Welcome All"
-
-#@app.route('/predict',methods=["Get"])
+    
 def weather_pred(LandAvgTemp,LandMaxTemp,LandMinTemp):
 
    
@@ -27,7 +19,7 @@ def weather_pred(LandAvgTemp,LandMaxTemp,LandMinTemp):
 
 
 def main():
-    st.title("Weather Prediction")
+    st.title("Predict Weather Prediction")
     html_temp = """
     <div style="background-color:tomato;padding:10px">
     <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App </h2>
