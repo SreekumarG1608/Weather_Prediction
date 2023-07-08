@@ -1,5 +1,4 @@
 streamlit
-PIL
 pickle
 seaborn
 sklearn
