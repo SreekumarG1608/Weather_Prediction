@@ -1,7 +1,6 @@
 import numpy as np
 import pickle
 import pandas as pd
-# from flasgger import Swagger
 import streamlit as st
 import base64
 from PIL import Image
